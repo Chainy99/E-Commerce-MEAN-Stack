@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+  <app-ind></app-ind>
+  <!-- <section class="contact"> -->
+  <div class="content">
+    <h2>.</h2>
+  </div>
+  <div class="container">
+    <div class="contactFrom">
+      <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+        <h4>Add medicine for sell</h4>
+        <div style="color: red;" *ngIf="avail">
+          <h6> {{msg}}</h6>
+        </div>
+        <div class="inputBox">
+          <input type="text" name="medicinename"  ngModel required #medicinename="ngModel">
+          <span>Medicine name</span>
+        </div>
+        <div class="inputBox" >
+          <select  name="medicinevolume" ngModel required #medicinevolume="ngModel">
+            <option value="small">10mg</option>
+            <option value="medium">50mg</option>
+            <option value="large">200mg</option>
+          </select>
+          <span>Choose medicine volume</span>
+
+        </div>
+        <div class="inputBox">
+          <input type="number" name="medicineprice"  min="1" ngModel required #medicineprice="ngModel">
+          <span>medicine price</span>
+        </div>
+         <div class="inputBox">
+          <input type="file" name="medicinepic" title="choose medicine image" (change)="selectImage($event)" ngModel required #medicinepic="ngModel">
+          <!-- <span>Choose medicine pic</span> -->
+        </div>
+        <div class="inputBox">
+          <input type="submit" [disabled]="f.invalid" value="submit">
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </section> -->
+</body>
+
+</html>
