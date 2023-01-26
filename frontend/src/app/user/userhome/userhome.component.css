@@ -285,3 +285,24 @@ padding-bottom: 2%;
   background-color: red;
   color: white;
 }
+/*----------------------------------------------------------------- niche right button -----------------------------------*/
+
+#mybtn{
+  /*    display: none;*/
+      position:fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: none;
+      color: black;
+      background:white;
+      
+      padding: 10px;
+      border-radius: 1000px;
+  }
+#mybtn:hover{
+      color: #00abff;
+}
+
+
+/*----------------------------------------------------------------- niche right button finish-----------------------------------*/

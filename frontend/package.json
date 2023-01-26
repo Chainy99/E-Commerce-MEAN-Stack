@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "devStart": "nodemon server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,7 +20,6 @@
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
     "angular2-notifications": "^9.0.0",
-    "socket.io": "^2.2.0",
     "aos": "^2.3.4",
     "jquery": "^3.5.1",
     "ng-noty": "^1.0.1",
@@ -42,7 +40,6 @@
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "nodemon": "^1.19.0",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
@@ -52,17 +49,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "^3.9.5"
-  },
-
-  
-
-
-
-  
-  "description": "",
-  "main": "index.js",
-  
-  "author": "",
-  "license": "ISC"
-  
+  }
 }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CategoriesComponent } from './ind/categories/categories.component';
 import { DoctorsComponent } from './ind/doctors/doctors.component';
 import { DiscountComponent } from './ind/discount/discount.component';
+import { ChatComponent } from './ind/chat/chat.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LoginComponent } from './auth/login/login.component';
 import { IndComponent } from './admin/ind/ind.component';
@@ -45,6 +46,7 @@ import { ViewoneuserComponent } from './admin/viewoneuser/viewoneuser.component'
     CategoriesComponent,
     DoctorsComponent,
     DiscountComponent,
+    ChatComponent,
     RegisterComponent,
     LoginComponent,
     IndComponent,
