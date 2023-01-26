@@ -72,19 +72,20 @@ ul li a{
 
 /*----------------------------------------------------------------- niche right button -----------------------------------*/
 
-#mybtn{
+#chatbtn{
   /*    display: none;*/
       position:fixed;
       bottom: 20px;
       right: 20px;
       z-index: 99;
-      border: none;
+      border: 10px;
       color: black;
       background:white;
       padding: 10px;
-      border-radius: 10px;
+      border-radius: 100px;
+      width: 100px;
   }
-#mybtn:hover{
+#chatbtn:hover{
       color: #00abff;
 }
 

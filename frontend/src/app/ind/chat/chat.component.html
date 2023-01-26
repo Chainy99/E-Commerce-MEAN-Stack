@@ -25,13 +25,26 @@
     * { font-family:tahoma; font-size:12px; padding:0px;margin:0px;}
     p { line-height:18px; }
     div { width:500px; margin-left:auto; margin-right:auto;}
-    #content { padding:5px; background:#ddd; border-radius:5px;
+    #content { padding:5px;  background:#ddd; border-radius:5px;
         overflow-y: scroll; border:1px solid #CCC;
-        margin-top:10px; height: 160px; }
+        margin-top:500px;  height: 400px; }
     #input { border-radius:2px; border:1px solid #ccc;
-        margin-top:10px; padding:5px; width:400px;
+        margin-top:10px; padding:5px; width:330px;
     }
     #status { width:88px;display:block;float:left;margin-top:15px; }
+
+.popup{
+  visibility: hidden;
+}
+.open-popup{
+  visibility: visible;
+}
+  
+#chatbtn {
+  margin-left: 700px;
+  margin-top: 250px;
+}
+
   </style>
 
 
@@ -44,22 +57,55 @@
 
 
   <body>
+
     <section class="qu" id="c">
+
+     <div class="popup" id="popup">
+      
     <div id="content"></div>
     <div>
       <span id="status">Connecting...</span>
       <input type="text" id="input" disabled="disabled" />
+      <button type= "button" onclick="closePopup()"> End Chat </button>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
+
+
+ 
+      
+  
+</div>
+ <div class = "container" id="chatbtn">
+  <button type= "submit" class="btn" onclick="openPopup()"> CHAT </button>
+</div>
+
    </section>
-  </body>
+ 
+
+<script type="text/javascript">
+  
+
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+
+}
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+
+
+
+
+</script>
+
+ </body>
+
+
+
 </html>
-
-
-
-
-
 
 
 

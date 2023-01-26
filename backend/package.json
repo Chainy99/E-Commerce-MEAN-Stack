@@ -1,5 +1,5 @@
 {
-  "name": "E-Medic-Care",
+  "name": "e-medic-care",
   "version": "1.0.0",
   "description": "this our online medic-care website",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "nodemon server.js",
     "dev2": "nodemon server2.js"
   },
-  "author": "Utsav",
+  "author": "10750047plymouth",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -18,10 +18,11 @@
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-flash": "0.0.2",
     "express-jwt": "^6.0.0",
     "express-session": "^1.17.1",
+    "http-proxy-middleware": "^2.0.6",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9",
@@ -32,7 +33,8 @@
     "passport-local": "^1.0.0",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.1",
-    "websocket": "^1.0.34"
+    "websocket": "^1.0.34",
+    "ws": "^8.12.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

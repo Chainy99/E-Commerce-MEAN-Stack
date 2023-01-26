@@ -4,12 +4,19 @@ const mongoose = require('mongoose')
 const url = 'mongodb://localhost/opzdb'
 var bodyParser = require('body-parser')
 var cors = require('cors')
+const WebSocket = require('ws');
 const app = express()
 var appRoutes = require("./routes/appRoutes")
 var adminRoutes = require('./routes/adminRoute')
 
+
+
+
+
+
+
 // process.env.PORT hoy to e else 3000
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000 
 
 // some useful library
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -161,3 +168,8 @@ wsServer.on('request', function(request) {
     }
   });
 });
+
+
+
+
+
