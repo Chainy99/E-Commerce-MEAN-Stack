@@ -15,234 +15,337 @@
 </head>
 
 <body>
-  <nav class="navbar  navbar-expand-lg bg-dark navbar-dark bb" id="xy">
+  <div class="tp" style="height: 20px; letter-spacing: 13px; color: gray; background-color: white;">
+<ul>
+    <i class="fa fa-facebook-official" style="font-size:15px; margin-top: 10px; margin-left: -500px;"></i> 
+    
+    <i class="fa fa-instagram" style="font-size:15px; margin-top: 15px;"></i>
+    <i class="fa fa-twitter" style="font-size:15px; margin-top: 15px;"></i>
+    <i class="fa fa-whatsapp" style="font-size:15px; margin-top: 15px;"></i>
+    <i class="fa fa-youtube" style="font-size:15px; margin-top: 15px;"></i>
+    <i class="fa fa-truck" style="font-size:15px; margin-top: 15px;"></i>
+    
+  </ul>
+  
+  </div >
+
+  <div>
+  
+
+ 
+    <h6 style="color: darkgray; font-weight: bold; font-family: nunito sans-serif; margin-left: 840px; font-size: 12px; margin-top: 0px;">HOTLINE:+94714840361</h6>
+  
+    </div>
+
+  <hr >
+
+  <div>
+  <div class="img " style="height: 80px; width: 50px;" >
+    <img src="/assets/favicon_io/favicon.png" alt="logo" style="height: 50px; width: 250px; margin-top: 10px; margin-left: -735px;">
+</div>
+<div>
+  <div id="cover" style="margin-left: -180px; margin-top: -80px;">
+    <form method="get" action="">
+      <div class="tb" style="margin-left: 55px; margin-top: -58px;">
+        <div class="td" ><input type="text" placeholder="Search" style="color: black;" required></div>
+        <div class="td" id="s-cover">
+          <button type="submit">
+            <div id="s-circle" style="margin-left: -28px;"></div>
+            <span style="width: 20px; margin-top: -3px;"></span>
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class=" cardd " style="margin-top: -50px;">
+
+      <i class="fa fa-cart-plus" style="font-size:45px;  margin-left: 1425px;"></i>
+      
+  
+    </div>
+  
+  </div>
+  </div>
+ 
+
+
+
+
+
+</div>
+<hr>
+
+  <nav class="navbar  navbar-expand-lg bg-l navbar-dark bb" id="xy" >
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-family: 'Montserrat', sans-serif; background-color: white;">
+      <ul class="navbar-nav" >
+        <li class="nav-item " ><a class="nav-link" href="#h" id="colarr" style="color: #fa3d03;">Home</a></li>
         <li class="nav-item" ><a class="nav-link" href="#f" id="colarr">Categories</a></li>
         <li class="nav-item" ><a class="nav-link" href="#d" id="colarr">Doctors</a></li>
         <li class="nav-item"><a class="nav-link" href="#o" id="colarr">Discounts</a></li>
-        <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" id="colarr">Register</a></li>
-        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" id="colarr">Login</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" id="colarr" style="left: 800px;">Register</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" id="colarr" style="left: 810px;">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#d" id="colarr" style="left: 810px;">Live-Chat</a></li>
         <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/admin']" id="colarr">Admin</a></li> -->
       </ul>
     </div>
   </nav>
+ 
+   
   <div class="header">
-    <div class="animated pulse infinite">
-      <h1 id="hdr" style="padding-left: 150px; padding-top:20%;" class="display-3">Your health is our first priority!!</h1>
+    <div class=" pulse infinite">
+      <h1 id="hdr" style="padding-left: 0px; padding-top:20%;" class="display-3">Online Pharmacy</h1>
+      
+      <hr class="ohr">
+      <br><br><br>
+      <h3 class="h3h" style="font-size: 30px; margin-left: -290px;">Ordering made Easy!</h3>
+    </div>
+    <div  >
+      <button type= "submit" class="shpbtn" style="color: white; background-color: #1796ff; height: 50px; width: 100px; margin-top: 100px; cursor: pointer; outline: none; border: none; font-size: 14px; margin-left: -290px;"> SHOP NOW </button>
     </div>
   </div>
-
-
-  
-    <section class="container" id="c">
-
-      <div class="popup" id="popup">
-       
-     <div id="content"></div>
-     <div>
-       <span id="status">Connecting...</span>
-       <input type="text" id="input" disabled="disabled" />
-       <button type= "button" onclick="closePopup()" id="endbtn"> End Chat </button>
-     </div>
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-     </script>
  
+	
  
-  
-       
+
+
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Socket.IO chat</title>
    
- </div>
-  <div class = "container" id="chatbtn">
-   <button type= "submit" class="btn" onclick="openPopup()"> CHAT </button>
- </div>
- 
-    </section>
-  
-    
-  
 
-</body>
-
-</html>
 <style>
-  * { font-family:tahoma; font-size:12px; padding:0px;margin:0px;}
-  p { line-height:18px; }
-  div { width:500px; margin-left:0px; margin-right:500px;}
-  #content { padding:5px;  background:#ddd; border-radius:5px;
-      overflow-y: scroll; border:1px solid #CCC;
-      margin-top:500px;  height: 400px; width: 400px; }
-  #input { border-radius:2px; border:1px solid #ccc;
-      margin-top:10px; padding:5px; width:230px;
-  }
-  #status { width:88px;display:block;float:left;margin-top:15px; }
 
+* { font-family:tahoma; font-size:12px; padding:0px;margin:0px;}
+    p { line-height:18px; }
+    div { width:500px; margin-left:auto; margin-right:auto;}
+   
 .popup{
-visibility: visible;
-margin-left: 900px;
-margin-top: -1000px;
-position: fixed;
-z-index: 99;
-      border: 10px;
+  visibility: hidden;
 }
 .open-popup{
-visibility: visible;
+  visibility: visible;
+}
+  
+#chatbtn {
+  margin-left: 1300px;
+  margin-top: 300px;
 }
 
-#chatbtn {
-margin-right: 50px;
-margin-top: 250px;
+  .container {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#endbtn {
-    width: 78px;
-    height: 28px;
+
+.messages_container {
+	width: 600px;
+	height: 500px;
+	position: relative;
+	border: 2px solid #075e54;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
 }
+
+.messages {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: #dcf8c6;
+}
+
+.join_message {
+	align-self: center;
+	width: fit-content;
+	background-color: #f89a7d;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.sent_message_container {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	width: fit-content;
+	background-color: #9df6be;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.your_name {
+	margin: 0;
+	font-size: 13px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	color: #fa3d03;
+}
+
+.sent_message {
+	margin: 0;
+}
+
+.receive_message_container {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: fit-content;
+	background-color: white;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.receiver_name {
+	margin: 0;
+	font-size: 13px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	color: #5761f6;
+}
+
+.receive_message {
+	margin: 0;
+}
+
+.input_container {
+	display: flex;
+	width: 100%;
+}
+
+.input {
+	flex: 1;
+	height: 40px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	border-top: 2px solid #075e54;
+}
+
+.btn {
+	width: 100px;
+	background-color: #075e54;
+	color: white;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
 
 </style>
-<script type="text/javascript">
-  
-
-  let popup = document.getElementById("popup");
-  
-  function openPopup(){
-    popup.classList.add("open-popup");
-  
-  }
-  function closePopup(){
-    popup.classList.remove("open-popup");
-  }
-  
-  
-  
-  
-  </script>
-  <script>
 
 
+  </head>
+  <body>
+    <section class="qu" id="c">
+      <div class="popup" id="popup">
+    <main class="container" >
+      <div class="messages_container">
+        <div class="messages" id="messages" ></div>
+        <form class="input_container" id="form">
+          <input class="input" id="input" placeholder="send message" />
+          <button class="btn" type="submit" >Send</button>
+        </form>
+        <div>
+      
+      
+          <button type= "button" onclick="closePopup()"> End Chat </button>
+        </div>
+        
+      </div>
+    </main>
 
-  
-
-    $(function () {
-      "use strict";
-      // for better performance - to avoid searching in DOM
-      var content = $('#content');
-      var input = $('#input');
-      var status = $('#status');
-      // my color assigned by the server
-      var myColor = false;
-      // my name sent to the server
-      var myName = false;
-      // if user is running mozilla then use it's built-in WebSocket
-      window.WebSocket = window.WebSocket || window.MozWebSocket;
-      // if browser doesn't support WebSocket, just show
-      // some notification and exit
-      if (!window.WebSocket) {
-        content.html($('<p>',
-          { text:'Sorry, but your browser doesn\'t support WebSocket.'}
-        ));
-        input.hide();
-        $('span').hide();
-        return;
-      }
-      // open connection
-      var connection = new WebSocket('ws://127.0.0.1:1337');
-      connection.onopen = function () {
-        // first we want users to enter their names
-        input.removeAttr('disabled');
-        status.text('Choose name:');
-      };
-      connection.onerror = function (error) {
-        // just in there were some problems with connection...
-        content.html($('<p>', {
-          text: 'Sorry, but there\'s some problem with your '
-             + 'connection or the server is down.'
-        }));
-      };
-      // most important part - incoming messages
-      connection.onmessage = function (message) {
-        // try to parse JSON message. Because we know that the server
-        // always returns JSON this should work without any problem but
-        // we should make sure that the massage is not chunked or
-        // otherwise damaged.
-        try {
-          var json = JSON.parse(message.data);
-        } catch (e) {
-          console.log('Invalid JSON: ', message.data);
-          return;
-        }
-        // NOTE: if you're not sure about the JSON structure
-        // check the server source code above
-        // first response from the server with user's color
-        if (json.type === 'color') { 
-          myColor = json.data;
-          status.text(myName + ': ').css('color', myColor);
-          input.removeAttr('disabled').focus();
-          // from now user can start sending messages
-        } else if (json.type === 'history') { // entire message history
-          // insert every single message to the chat window
-          for (var i=0; i < json.data.length; i++) {
-          addMessage(json.data[i].author, json.data[i].text,
-              json.data[i].color, new Date(json.data[i].time));
-          }
-        } else if (json.type === 'message') { // it's a single message
-          // let the user write another message
-          input.removeAttr('disabled'); 
-          addMessage(json.data.author, json.data.text,
-                     json.data.color, new Date(json.data.time));
-        } else {
-          console.log('Hmm..., I\'ve never seen JSON like this:', json);
-        }
-      };
-      /**
-       * Send message when user presses Enter key
-       */
-      input.keydown(function(e) {
-        if (e.keyCode === 13) {
-          var msg = $(this).val();
-          if (!msg) {
-            return;
-          }
-          // send the message as an ordinary text
-          connection.send(msg);
-          $(this).val('');
-          // disable the input field to make the user wait until server
-          // sends back response
-          input.attr('disabled', 'disabled');
-          // we know that the first message sent from a user their name
-          if (myName === false) {
-            myName = msg;
-          }
-        }
-      });
-      /**
-       * This method is optional. If the server wasn't able to
-       * respond to the in 3 seconds then show some error message 
-       * to notify the user that something is wrong.
-       */
-      setInterval(function() {
-        if (connection.readyState !== 1) {
-          status.text('Error');
-          input.attr('disabled', 'disabled').val(
-              'Unable to communicate with the WebSocket server.');
-        }
-      }, 3000);
-      /**
-       * Add message to the chat window
-       */
-      function addMessage(author, message, color, dt) {
-        content.prepend('<p><span style="color:' + color + '">'
-            + author + '</span> @ ' + (dt.getHours() < 10 ? '0'
-            + dt.getHours() : dt.getHours()) + ':'
-            + (dt.getMinutes() < 10
-              ? '0' + dt.getMinutes() : dt.getMinutes())
-            + ': ' + message + '</p>');
-      }
-    });
-    
-    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
     </script>
-    
+
+</div>
+    <div class = "container" id="chatbtn">
+      <button type= "submit" class="btn" onclick="openPopup()"> CHAT </button>
+    </div>
+
+
+</section>
+
+    <script type="text/javascript">
+  
+
+      let popup = document.getElementById("popup");
+      
+      function openPopup(){
+        popup.classList.add("open-popup");
+      
+      }
+      function closePopup(){
+        popup.classList.remove("open-popup");
+      }
+      
+      
+      
+      
+      </script>
+
+
+<script>
+
+const socket = io();
+
+const messages = document.getElementById("messages");
+const form = document.getElementById("form");
+const input = document.getElementById("input");
+
+const userName = prompt("Enter Your Name Please.");
+
+socket.emit("user:join", userName);
+
+socket.on("global:message", (message) => {
+	messages.innerHTML += `
+    <p class="join_message" >${message}</p>
+    `;
+});
+
+socket.on("message:receive", (payload) => {
+	messages.innerHTML += `          
+    <div class="receive_message_container" >
+        <p class="receiver_name" >${payload.name}</p>
+        <p class="sent_message" >${payload.message}</p>
+    </div>
+    `;
+});
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+	messages.innerHTML += `          
+    <div class="sent_message_container" >
+        <p class="your_name" >You</p>
+        <p class="sent_message" >${input.value}</p>
+    </div>
+    `;
+	socket.emit("message:send", { name: userName, message: input.value });
+	input.value = "";
+});
+
+
+
+
+</script>
+
+
+  </body>
+</html>
