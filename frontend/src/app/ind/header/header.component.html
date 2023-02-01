@@ -87,7 +87,7 @@
         <li class="nav-item"><a class="nav-link" href="#o" id="colarr">Discounts</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" id="colarr" style="left: 800px;">Register</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" id="colarr" style="left: 810px;">Login</a></li>
-        <li class="nav-item"><a class="nav-link" href="#d" id="colarr" style="left: 810px;">Live-Chat</a></li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" id="colarr" style="left: 810px;">Live-Chat</a></li>
         <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/admin']" id="colarr">Admin</a></li> -->
       </ul>
     </div>
@@ -100,7 +100,7 @@
       
       <hr class="ohr">
       <br><br><br>
-      <h3 class="h3h" style="font-size: 30px; margin-left: -290px;">Ordering made Easy!</h3>
+      <h3 class="h3h" style="font-size: 30px; margin-left: -290px;"  >Ordering made Easy!</h3>
     </div>
     <div  >
       <button type= "submit" class="shpbtn" style="color: white; background-color: #1796ff; height: 50px; width: 100px; margin-top: 100px; cursor: pointer; outline: none; border: none; font-size: 14px; margin-left: -290px;"> SHOP NOW </button>
@@ -252,36 +252,7 @@
 
   </head>
   <body>
-    <section class="qu" id="c">
-      <div class="popup" id="popup">
-    <main class="container" >
-      <div class="messages_container">
-        <div class="messages" id="messages" ></div>
-        <form class="input_container" id="form">
-          <input class="input" id="input" placeholder="send message" />
-          <button class="btn" type="submit" >Send</button>
-        </form>
-        <div>
-      
-      
-          <button type= "button" onclick="closePopup()"> End Chat </button>
-        </div>
-        
-      </div>
-    </main>
-
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./script.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-    </script>
-
-</div>
-    <div class = "container" id="chatbtn">
-      <button type= "submit" class="btn" onclick="openPopup()"> CHAT </button>
-    </div>
-
-
-</section>
+   
 
     <script type="text/javascript">
   
